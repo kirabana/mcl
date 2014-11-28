@@ -11,7 +11,25 @@
 
 	<header>
 		<div class="barTop">
-			<a href="{{ URL::to('/login') }}">Login</a>  | <a href="{{ URL::to('/users/create') }}">Register</a>
+
+
+
+
+			@if(Auth::check() && Auth::user()->user == 1)
+				<li><a href="{{ url('/createshow') }}">Create Show</a></li>
+				<li><a href="{{ url('/createimages') }}">Create Images</a></li>
+				<li><a href="{{ url('/createpost') }}">Create Post</a></li>
+				<li><a href="{{ url('/logout') }}">Logout</a></li>
+			@elseif(Auth::check())
+				<a href="{{ URL::to('/logout') }}">Logout</a> | <a href="{{ URL::to('/userpage') }}">User</a>
+			@else
+				<a href="{{ URL::to('/login') }}">Login</a>  | <a href="{{ URL::to('/users/create') }}">Register</a>
+			@endif
+
+
+
+
+			
 		</div>
 		<div class="logo">
 			<img src="{{asset("assets/img/mcl_logo.png")}}" alt="MCL Logo">
@@ -37,10 +55,10 @@
 			</div>
 			<div class="col-2">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Recipes</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="{{ URL::to('/') }}">Home</a></li>
+					<li><a href="{{ URL::to('/recipes') }}">Recipes</a></li>
+					<li><a href="{{ URL::to('/about') }}">About</a></li>
+					<li><a href="{{ URL::to('/contact') }}">Contact</a></li>
 				</ul>
 			</div>
 			<div class="col-4">
@@ -53,8 +71,17 @@
 			</div>
 			<div class="col-1">
 				<ul>
-					<a href="{{ URL::to('/login') }}"><button type="button" class="register">Login</button></a>
-					<a href="{{ URL::to('/users/create') }}"><button type="button" class="register">Register</button></a>
+					@if(Auth::check() && Auth::user()->user == 1)
+						<li><a href="{{ url('/createshow') }}">Create Show</a></li>
+						<li><a href="{{ url('/createimages') }}">Create Images</a></li>
+						<li><a href="{{ url('/createpost') }}">Create Post</a></li>
+						<li><a href="{{ url('/logout') }}">Logout</a></li>
+					@elseif(Auth::check())
+						<a href="{{ URL::to('/logout') }}"><button type="button" class="register">Logout</button></a>
+					@else
+						<a href="{{ URL::to('/login') }}"><button type="button" class="register">Login</button></a>
+						<a href="{{ URL::to('/users/create') }}"><button type="button" class="register">Register</button></a>
+					@endif
 				</ul>
 			</div>
 		</div>
@@ -64,6 +91,11 @@
 	</footer>
 </body>
 </html>
+
+
+
+
+			
 
 
 

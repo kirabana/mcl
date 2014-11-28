@@ -16,15 +16,8 @@
 	<div class="greenBackground">
 		<div class="container">
 			<h1>What We Do</h1>
-			<div class="img1">
-				<img src="{{asset("assets/img/img_01.png")}}" alt="">
-			</div>
-			<div class="img2">
-				<img src="{{asset("assets/img/img_02.png")}}" alt="">
-			</div>
-			<div class="img3">
-				<img src="{{asset("assets/img/img_03.png")}}" alt="">
-			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, maiores, aperiam, et atque error dignissimos molestiae nostrum porro ipsum necessitatibus accusamus dolor ducimus id laudantium quaerat voluptates dolorum saepe dolore.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, rem, reprehenderit sint blanditiis sunt excepturi iusto ducimus veritatis consequuntur in inventore labore quidem commodi. Distinctio, in dolore voluptatem vel deserunt.</p>
 		</div>
 	</div>
 

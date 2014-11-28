@@ -10,7 +10,6 @@ Route::get('/contact', 'PagesController@contact');
 
 Route::get('/register', 'PagesController@register');
 
-
 Route::get('/retrieve', 'PagesController@retrieve');
 
 Route::get('/entry', 'PagesController@entry');
@@ -26,6 +25,8 @@ Route::get('/editentry', 'PagesController@editentry');
 Route::get('/users', 'PagesController@users');
 
 Route::resource('users', 'UsersController');
+
+Route::resource('posts', 'PostsController');
 
 Route::get('/userpage', 'PagesController@userpage');
 
