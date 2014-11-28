@@ -1,0 +1,31 @@
+[24-Nov-2014 03:12:32 UTC] PHP Fatal error:  Cannot redeclare class PagesController in /home/hikarits/public_html/mcl/app/controllers/PagesController.php on line 9
+[24-Nov-2014 04:35:16 UTC] PHP Fatal error:  Call to undefined function User() in /home/hikarits/public_html/mcl/app/routes.php on line 39
+[24-Nov-2014 23:53:02 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/hikarits/public_html/mcl/app/storage/views/340a543aaf3c6e992757e3fd02b339a1 on line 12
+[25-Nov-2014 00:43:05 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/hikarits/public_html/mcl/app/storage/views/340a543aaf3c6e992757e3fd02b339a1 on line 10
+[25-Nov-2014 00:43:18 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/hikarits/public_html/mcl/app/storage/views/340a543aaf3c6e992757e3fd02b339a1 on line 10
+[25-Nov-2014 01:31:11 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/hikarits/public_html/mcl/app/controllers/UsersController.php on line 21
+[25-Nov-2014 01:31:34 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/hikarits/public_html/mcl/app/controllers/UsersController.php on line 21
+[25-Nov-2014 03:15:41 UTC] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM) in /home/hikarits/public_html/mcl/app/controllers/UsersController.php on line 30
+[25-Nov-2014 03:36:31 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/hikarits/public_html/mcl/app/routes.php on line 59
+[25-Nov-2014 04:02:34 UTC] PHP Fatal error:  Call to undefined function fails() in /home/hikarits/public_html/mcl/app/controllers/UsersController.php on line 28
+[25-Nov-2014 04:24:31 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 04:39:25 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 04:47:57 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 04:48:57 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 04:53:33 UTC] PHP Parse error:  syntax error, unexpected 'isValid' (T_STRING), expecting '(' in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 04:53:40 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 05:04:26 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 05:04:40 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 05:04:53 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 05:05:51 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 05:07:14 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 05:11:32 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 05:20:51 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 05:22:50 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 05:23:41 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 05:24:59 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 05:32:53 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 05:34:31 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/hikarits/public_html/mcl/app/models/User.php on line 40
+[25-Nov-2014 05:49:16 UTC] PHP Parse error:  syntax error, unexpected ''password'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/hikarits/public_html/mcl/app/models/User.php on line 12
+[26-Nov-2014 09:03:17 UTC] PHP Fatal error:  Cannot redeclare User::$fillable in /home/hikarits/public_html/mcl/app/models/User.php on line 35
+[26-Nov-2014 09:05:34 UTC] PHP Fatal error:  Cannot redeclare User::$fillable in /home/hikarits/public_html/mcl/app/models/User.php on line 35
