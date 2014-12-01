@@ -1,3 +1,5 @@
+<!--
+
 @extends('layouts.index')
 
 @section('content')
@@ -73,7 +75,9 @@
 				</div>
 				<div class="recipeContent">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, natus, laudantium, in, suscipit quasi impedit voluptate sed eum modi dolorum facere sunt enim dolorem quidem quis ab dolores reiciendis rerum.
-					<a href="{{ URL::to('/entry') }}"><button type="button" class="readButton">Read More</button></a>
+					<div>
+						<a href="{{ URL::to('/entry') }}"><button type="button" class="readButton">Read More</button></a>
+					</div>
 				</div>
 				<div class="recipeFooter">
 					<span class="rating">Rating</span> <span class="date">23 Oct 2014</span> <span class="author">Hikari</span>

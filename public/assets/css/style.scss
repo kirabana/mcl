@@ -86,6 +86,16 @@ h2{
 	max-width: 960px;
 	height: auto;
 	margin: 0 auto;
+	#gallery{
+		width: 100%;
+		height: auto;
+		float: left;
+		img{
+			width: 100%;
+			height: auto;
+			float: left;
+		}
+	}
 }
 
 .registerBox{
@@ -235,9 +245,9 @@ input{
 }
 
 .readMore{
-	color: $yellow;
+	// color: #fff;
 	a{
-		color: $yellow;
+		color: #fff;
 		text-decoration: none;
 	}
 }
@@ -427,7 +437,7 @@ textarea{
 }
 
 .containerRecipe{
-	width: 700px;
+	max-width: 700px;
 	height: auto;
 	float: left;
 }
@@ -440,7 +450,7 @@ textarea{
 // }
 
 .recipeEntry{
-	width: 700px;
+	max-width: 700px;
 	height: auto;
 	float: left;
 	border-bottom: 1px dotted $grey;
@@ -539,5 +549,36 @@ textarea{
 	.loginBackground{
 		width: 100%;
 	}
+
+	footer{
+		.col-2{
+			img{
+				display: none;;
+			}
+		}
+	}
+
+	.tagMenu{
+		width: 100%;
+		float: left;
+		background: orange;
+	}
+
+	.containerRecipe{
+		background: green;
+			.recipeEntry{
+				width: 100%;
+					.recipeContent{
+						width: 100%;
+						height: auto;
+					}
+					img{
+						width: 100%;
+						height: auto;
+					}
+			}
+
+	}
+
 
 }

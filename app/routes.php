@@ -28,7 +28,9 @@ Route::resource('users', 'UsersController');
 
 Route::resource('posts', 'PostsController');
 
-Route::get('/userpage', 'PagesController@userpage');
+Route::resource('categories', 'CategoriesController');
+
+// Route::get('/userpage', 'PagesController@userpage');
 
 
 Route::get('login', 'SessionsController@create');

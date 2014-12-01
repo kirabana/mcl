@@ -235,6 +235,14 @@ h2 {
   max-width: 960px;
   height: auto;
   margin: 0 auto; }
+  .container #gallery {
+    width: 100%;
+    height: auto;
+    float: left; }
+    .container #gallery img {
+      width: 100%;
+      height: auto;
+      float: left; }
 
 .registerBox {
   width: 100%;
@@ -347,11 +355,9 @@ input {
   color: #FFF;
   background-color: #8cc8b6; }
 
-.readMore {
-  color: #f2b33d; }
-  .readMore a {
-    color: #f2b33d;
-    text-decoration: none; }
+.readMore a {
+  color: #fff;
+  text-decoration: none; }
 
 .sideImg {
   width: 100%; }
@@ -495,12 +501,12 @@ textarea {
     margin-top: 1em; }
 
 .containerRecipe {
-  width: 700px;
+  max-width: 700px;
   height: auto;
   float: left; }
 
 .recipeEntry {
-  width: 700px;
+  max-width: 700px;
   height: auto;
   float: left;
   border-bottom: 1px dotted #363636;
@@ -573,4 +579,23 @@ textarea {
       width: 100%; }
 
   .loginBackground {
-    width: 100%; } }
+    width: 100%; }
+
+  footer .col-2 img {
+    display: none; }
+
+  .tagMenu {
+    width: 100%;
+    float: left;
+    background: orange; }
+
+  .containerRecipe {
+    background: green; }
+    .containerRecipe .recipeEntry {
+      width: 100%; }
+      .containerRecipe .recipeEntry .recipeContent {
+        width: 100%;
+        height: auto; }
+      .containerRecipe .recipeEntry img {
+        width: 100%;
+        height: auto; } }

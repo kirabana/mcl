@@ -3,7 +3,17 @@
 @section('content')
 
 	<div class="container">
-		<div class="mainImg">
+
+
+		<div id="gallery">
+			<img src="{{asset("assets/img/frontpage/home_2.jpg")}}" alt="">
+			<img src="{{asset("assets/img/frontpage/home_4.jpg")}}" alt="">
+			<img src="{{asset("assets/img/frontpage/home_5.jpg")}}" alt="">
+			<img src="{{asset("assets/img/frontpage/home_1.jpg")}}" alt="">
+		</div>
+
+
+		<!-- <div class="mainImg">
 			<img src="{{asset("assets/img/mainImg-01.png")}}" alt="">
 		</div>
 		<div class="sideMain">
@@ -13,7 +23,7 @@
 			<h1>Welcome To MCL</h1>
 			<p>Cooking blog about home-made family food for every day meal.</p>
 			<p class="readMore"><a href="{{ URL::to('/about') }}">>>Read More</a></p>
-		</div>
+		</div> -->
 	</div>
 
 	<div class="container">
@@ -26,16 +36,10 @@
 	
 	<div class="greenBackground">
 		<div class="container">
-			<h1>Most Popular Recipes</h1>
-			<div class="img1">
-				<img src="{{asset("assets/img/img_01.png")}}" alt="">
-			</div>
-			<div class="img2">
-				<img src="{{asset("assets/img/img_02.png")}}" alt="">
-			</div>
-			<div class="img3">
-				<img src="{{asset("assets/img/img_03.png")}}" alt="">
-			</div>
+			<h1>About My Cooking Lesson</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo facere error obcaecati doloremque, quidem cumque vitae numquam odit inventore similique necessitatibus eum laborum perferendis, voluptatum perspiciatis, blanditiis quo rerum dolore.</p>
+			<p class="readMore"><a href="{{ URL::to('/about') }}">>>Read More</a></p>
+			
 		</div>
 	</div>
 

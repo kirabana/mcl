@@ -1,13 +1,63 @@
 @extends('layouts.index')
 
-@section('title')
-MCL - All Posts
-@stop
-
 @section('content')
 
-<div class="content">
+
+
 	<div class="container">
+
+
+
+		<div class="tagMenu">
+			<h2>Categories</h2>
+			<ul>
+				<li>Cat Here</li>
+			</ul>
+		</div>
+
+
+
+
+		<div class="containerRecipe">
+			@foreach ($posts as $post)
+			<div class="recipeEntry">
+				<h2>{{ $post->title }}</h2>
+				<div class="recipethumbnail">
+					<img src="{{asset("assets/img/entry/".$post->image)}}" alt="">
+				</div>
+				
+				<div class="recipeContent">
+					{{ $post->content }}
+					<div>
+						<a href="{{ url('posts') }}"><button type="button" class="readButton">Read More</button></a>
+					</div>
+				</div>
+				<div class="recipeFooter">
+					<span class="rating">Rating</span> <span class="date">{{ date('d/m/Y', strtotime($post->created_at)) }}</span> <span class="author">Hikari</span>
+				</div>
+			</div>
+			@endforeach
+		</div>
+
+
+
+		<!-- <div class="containerRecipe">
+			<a href="{{ URL::to('/users') }}">Users Page</button></a>
+			<a href="{{ URL::to('/create') }}">Create Another Post</button></a>
+		</div> -->
+
+
+	</div>
+
+	
+
+@stop
+
+
+
+
+
+<!-- <div class="container">
 		<div class="post">
 			<h1>All posts</h1>
 			@foreach ($posts as $post)
@@ -17,7 +67,4 @@ MCL - All Posts
 
 			@endforeach
 		</div>
-	</div>
-</div>
-
-@stop
+	</div> -->

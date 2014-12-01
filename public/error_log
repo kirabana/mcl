@@ -29,3 +29,14 @@
 [25-Nov-2014 05:49:16 UTC] PHP Parse error:  syntax error, unexpected ''password'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/hikarits/public_html/mcl/app/models/User.php on line 12
 [26-Nov-2014 09:03:17 UTC] PHP Fatal error:  Cannot redeclare User::$fillable in /home/hikarits/public_html/mcl/app/models/User.php on line 35
 [26-Nov-2014 09:05:34 UTC] PHP Fatal error:  Cannot redeclare User::$fillable in /home/hikarits/public_html/mcl/app/models/User.php on line 35
+[27-Nov-2014 02:40:51 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/hikarits/public_html/mcl/app/controllers/SessionsController.php on line 24
+[27-Nov-2014 04:48:46 UTC] PHP Parse error:  syntax error, unexpected '$posts' (T_VARIABLE), expecting function (T_FUNCTION) in /home/hikarits/public_html/mcl/app/controllers/PagesController.php on line 47
+[28-Nov-2014 04:42:18 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting ']' in /home/hikarits/public_html/mcl/app/models/Post.php on line 14
+[28-Nov-2014 04:43:17 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/hikarits/public_html/mcl/app/models/Post.php on line 50
+[28-Nov-2014 04:44:17 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/hikarits/public_html/mcl/app/models/Post.php on line 50
+[28-Nov-2014 04:44:43 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/hikarits/public_html/mcl/app/models/Post.php on line 50
+[28-Nov-2014 04:47:53 UTC] PHP Fatal error:  Trait 'UserTrait' not found in /home/hikarits/public_html/mcl/app/models/Post.php on line 14
+[30-Nov-2014 04:12:51 UTC] PHP Parse error:  syntax error, unexpected ''CategoriesController'' (T_CONSTANT_ENCAPSED_STRING) in /home/hikarits/public_html/mcl/app/routes.php on line 29
+[30-Nov-2014 04:14:04 UTC] PHP Fatal error:  Cannot redeclare PostsController::__construct() in /home/hikarits/public_html/mcl/app/controllers/PostsController.php on line 54
+[30-Nov-2014 04:14:22 UTC] PHP Fatal error:  Cannot redeclare PostsController::__construct() in /home/hikarits/public_html/mcl/app/controllers/PostsController.php on line 54
+[30-Nov-2014 04:14:25 UTC] PHP Fatal error:  Cannot redeclare PostsController::__construct() in /home/hikarits/public_html/mcl/app/controllers/PostsController.php on line 54

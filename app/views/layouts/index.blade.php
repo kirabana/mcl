@@ -5,31 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My COOKING LESSON | Recipes & Blogs</title>
 	<link rel="stylesheet" href="{{asset("assets/css/style.css")}}">
+	<link rel="stylesheet" href="{{asset("assets/css/slide.css")}}">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 	<header>
 		<div class="barTop">
-
-
-
-
 			@if(Auth::check() && Auth::user()->user == 1)
 				<li><a href="{{ url('/createshow') }}">Create Show</a></li>
 				<li><a href="{{ url('/createimages') }}">Create Images</a></li>
 				<li><a href="{{ url('/createpost') }}">Create Post</a></li>
 				<li><a href="{{ url('/logout') }}">Logout</a></li>
 			@elseif(Auth::check())
-				<a href="{{ URL::to('/logout') }}">Logout</a> | <a href="{{ URL::to('/userpage') }}">User</a>
+				<a href="{{ URL::to('/users') }}">User's Page</a> | <a href="{{ URL::to('/logout') }}">Logout</a>
 			@else
 				<a href="{{ URL::to('/login') }}">Login</a>  | <a href="{{ URL::to('/users/create') }}">Register</a>
 			@endif
-
-
-
-
-			
+		
 		</div>
 		<div class="logo">
 			<img src="{{asset("assets/img/mcl_logo.png")}}" alt="MCL Logo">
@@ -39,7 +32,7 @@
 		<nav>
 			<ul>
 				<li><a href="{{ URL::to('/') }}">Home</a></li>
-				<li><a href="{{ URL::to('/recipes') }}">Recipes</a></li>
+				<li><a href="{{ URL::to('/posts') }}">Recipes</a></li>
 				<li><a href="{{ URL::to('/about') }}">About</a></li>
 				<li><a href="{{ URL::to('/contact') }}">Contact</a></li>
 			</ul>
@@ -90,6 +83,11 @@
 		<p>© My Cooking Lesson 2014</p>
 	</footer>
 </body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{{asset("assets/js/jquery.slides.min.js")}}"></script>
+<script src="{{asset("assets/js/script.js")}}"></script>
+
 </html>
 
 

@@ -1,19 +1,15 @@
 @extends('layouts.index')
 
-@section('title')
-Posts - Create Post
-@stop
-
 @section('content')
 
 <div class="content">
 	<div class="container">
 		<div class="post">
-			<h1>Create Post</h1>
+			<h1>Create A Post</h1>
 
 
 
-			{{ Form::open(['action' => 'PostsController@store']) }}
+			{{ Form::open(['action' => 'PostsController@store', 'files'=> true]) }}
 
 			<div class="form-group">
 				{{ Form::label('title', 'Title:') }}
@@ -21,11 +17,41 @@ Posts - Create Post
 				{{ $errors->first('title') }}
 			</div>
 
+
+
+
+			<div class="form-group">
+				{{ Form::label('image', 'Image:') }}
+				{{ Form::file('image', ['class' => 'form-control']) }}
+				{{ $errors->first('image') }}
+			</div>
+
+
+
+
 			<div class="form-group">
 				{{ Form::label('content', 'Content:') }}
 				{{ Form::textarea('content', '', ['class' => 'form-control']) }}
 				{{ $errors->first('content') }}
 			</div>
+
+
+
+			<div class="form-group">
+				{{ Form::label('ingredients', 'Ingredients:') }}
+				{{ Form::textarea('ingredients', '', ['class' => 'form-control']) }}
+				{{ $errors->first('ingredients') }}
+			</div>
+
+			<div class="form-group">
+				{{ Form::label('method', 'Method:') }}
+				{{ Form::textarea('method', '', ['class' => 'form-control']) }}
+				{{ $errors->first('method') }}
+			</div>
+
+
+
+
 
 			<div class="form-group">
 				{{ Form::submit('Post', ['class' => 'submit']) }}
@@ -33,6 +59,7 @@ Posts - Create Post
 
 			{{ Form::close() }}
 		</div>
+		<a href="{{ URL::to('/posts') }}">Back to Posts Page</button></a>
 	</div>
 </div>
 

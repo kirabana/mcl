@@ -11,7 +11,7 @@ class SessionsController extends BaseController{
 	{
 		if(Auth::attempt(Input::only('username', 'email', 'password')))
 		{
-			return Redirect::to('/userpage');
+			return Redirect::to('/users');
 		}
 
 		return 'Incorrect Username or PW';

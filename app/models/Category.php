@@ -1,15 +1,11 @@
 <?php
 
-class Post extends Eloquent{
+class Category extends Eloquent{
 
-	protected $fillable = ['title', 'image', 'content', 'ingredients', 'method', 'created_at', 'updated_at', 'deleted_at'];
+	protected $fillable = ['title'];
 
 	public static $rules = [
-		'title' => 'required',
-		'content' => 'required',
-		'image' => 'required',
-		'ingredients' => 'required',
-		'method' => 'required'
+		'title' => 'required'
 	];
 
 	public $errors;
@@ -19,7 +15,7 @@ class Post extends Eloquent{
 	 *
 	 * @var string
 	 */
-	protected $table = 'tb_posts';
+	protected $table = 'tb_categories';
 
 	/**
 	 * The attributes excluded from the model's JSON form.
@@ -39,4 +35,3 @@ class Post extends Eloquent{
 	}
 
 }
-

@@ -1,15 +1,14 @@
-@extends('layouts.userlogin')
+@extends('layouts.index')
 
 @section('content')
 
 	<div class="container">
-		<h1>All Users</h1>
+		<h1>Welcome</h1>
 
-		@foreach ($users as $user)
+		<a href="{{ URL::to('posts/create') }}"><button type="button" class="readButton">Create A Post</button></a>
+		<a href="{{ URL::to('categories/create') }}"><button type="button" class="readButton">Create A Category</button></a>
+		<a href="{{ URL::to('users/create') }}"><button type="button" class="readButton">Create A User</button></a>
 
-		<li> {{ link_to("/users/{$user->username}", $user->username) }} </li>
-	
-		@endforeach
 	</div>
 
 @stop
