@@ -97,59 +97,11 @@
 
 		<div class="tagMenu">
 			<h2>Categories</h2>
-			<ul>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-
-			</ul>
-
-			<h2>Popular Categories</h2>
-			<ul>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-
-			</ul>
-
-			<h2>Recent Entries</h2>
-			<ul>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				
-			</ul>
-
-			<h2>Popular Entries</h2>
-			<ul>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				<li><a href="{{ URL::to('/') }}">frefre</a></li>
-				
+			<ul>@foreach (Category::all() as $category)
+				<li>{{ $category->title }}</li>
+				@endforeach
 			</ul>
 		</div>
-
-
-
-
-
-
 
 
 

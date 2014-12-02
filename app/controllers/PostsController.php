@@ -29,7 +29,7 @@ class PostsController extends BaseController {
 
 	public function store(){
 
-		$input = Input::only('title', 'content', 'image', 'ingredients', 'method');
+		$input = Input::only('title', 'content', 'image', 'ingredients', 'method', 'category_id');
 
 
 		$this->post->fill($input);

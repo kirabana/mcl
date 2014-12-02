@@ -49,6 +49,12 @@
 				{{ $errors->first('method') }}
 			</div>
 
+			<div class="form-group">
+				{{ Form::label('category_id', 'Category:') }}
+				{{ Form::select('category_id', ['' => '--Please Select--'] + Category::lists('title', 'id'), '', ['class' => 'form-control']) }}
+				{{ $errors->first('category_id') }}
+			</div>
+
 
 
 

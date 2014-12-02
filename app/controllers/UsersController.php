@@ -42,4 +42,33 @@ class UsersController extends \BaseController {
 
 		return Redirect::to('users');
 	}
+
+
+
+
+
+	public function edit($id){
+
+		{
+
+			$user = User::find($id);
+			return View::make('users.edit')->with('user', $user);
+		}
+
+		return Redirect::to('users');
+	}
+
+
+
 }
+
+
+
+
+
+// if(Auth::check() && (Auth::user()->admin == 1 || Auth::user()->id == $id))
+
+
+$post = Post::find($id);
+
+		return View::make('posts.show', compact('post'));

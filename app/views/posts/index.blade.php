@@ -10,8 +10,9 @@
 
 		<div class="tagMenu">
 			<h2>Categories</h2>
-			<ul>
-				<li>Cat Here</li>
+			<ul>@foreach (Category::all() as $category)
+				<li>{{ $category->title }}</li>
+				@endforeach
 			</ul>
 		</div>
 
@@ -29,7 +30,7 @@
 				<div class="recipeContent">
 					{{ $post->content }}
 					<div>
-						<a href="{{ url('posts') }}"><button type="button" class="readButton">Read More</button></a>
+						<a href="posts/{{ $post -> id }}"><button type="button" class="readButton">Read More</button></a>
 					</div>
 				</div>
 				<div class="recipeFooter">
