@@ -14,7 +14,7 @@ $(window).load(function(){
 			interval: 3000,
 				// [number] Time spent on each slide in milliseconds.
 
-			auto: false,
+			auto: true,
 				// [boolean] Start playing the slideshow on load.
 
 			swap: true,

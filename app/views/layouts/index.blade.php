@@ -18,7 +18,7 @@
 				<li><a href="{{ url('/createpost') }}">Create Post</a></li>
 				<li><a href="{{ url('/logout') }}">Logout</a></li>
 			@elseif(Auth::check())
-				<a href="{{ URL::to('/users') }}">User's Page</a> | <a href="{{ URL::to('/logout') }}">Logout</a>
+				<a href="{{ URL::to('/users/home') }}">User's Page</a> | <a href="{{ URL::to('/logout') }}">Logout</a>
 			@else
 				<a href="{{ URL::to('/login') }}">Login</a>  | <a href="{{ URL::to('/users/create') }}">Register</a>
 			@endif

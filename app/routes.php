@@ -24,11 +24,15 @@ Route::get('/editentry', 'PagesController@editentry');
 
 Route::get('/users', 'PagesController@users');
 
+Route::get('/users/home', 'UsersController@home');
+
 Route::resource('users', 'UsersController');
 
 Route::resource('posts', 'PostsController');
 
 Route::resource('categories', 'CategoriesController');
+
+Route::get('users/edit/{id}', 'UsersController@edit');
 
 // Route::get('/userpage', 'PagesController@userpage');
 

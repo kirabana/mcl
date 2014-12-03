@@ -11,7 +11,7 @@
 		<div class="tagMenu">
 			<h2>Categories</h2>
 			<ul>@foreach (Category::all() as $category)
-				<li>{{ $category->title }}</li>
+				<li><a href="#">{{ $category->title }}</a></li>
 				@endforeach
 			</ul>
 		</div>

@@ -10,18 +10,17 @@ class UsersController extends \BaseController {
 	}
 
 
-	public function index()
+	public function home()
 	{
-		$users = $this->user->all();
+		$user = User::find(Auth::id());
 
-		return View::make('users.index', ['users' => $users]);
+		return View::make('users.home', ['user' => $user]);
 	}
 
 	public function show($username)
 	{
-		$user = $this->user->whereUsername($username)->first();
 
-		return View::make('users.show', ['user' => $user]);
+		return View::make('users.show');
 	}
 
 	public function create()
@@ -49,14 +48,49 @@ class UsersController extends \BaseController {
 
 	public function edit($id){
 
-		{
+		if(Auth::check() && (Auth::user()->admin == 1 || Auth::user()->id == $id)){
 
 			$user = User::find($id);
+
 			return View::make('users.edit')->with('user', $user);
 		}
 
-		return Redirect::to('users');
+		return Redirect::to('/');
 	}
+
+	public function update($id){
+		if(Auth::id() == $id){
+			$input = Input::only('username', 'email', 'password', 'confirmPassword', 'cast', 'admin');
+		}else{
+			$input = Input::only('username', 'email', 'cast', 'admin');
+		}
+
+		$this->user = User::find($id);
+
+		if(Auth::id() == $id){
+
+			if ( ! $this->user->isValid($input))
+			{
+				return Redirect::back()->withInput()->withErrors($this->user->errors);
+			}
+
+			if( $input['password'] != $input['confirmPassword']){
+				return Redirect::back()->withInput()->with('confirmPassword', 'Passwords do not match');
+			}
+		}
+
+		$this->user->fill($input);
+
+		$this->user->save();
+
+		return Redirect::to('/users/'.$input['username']);
+	}
+
+
+
+
+
+
 
 
 
@@ -69,6 +103,6 @@ class UsersController extends \BaseController {
 // if(Auth::check() && (Auth::user()->admin == 1 || Auth::user()->id == $id))
 
 
-$post = Post::find($id);
+// $post = Post::find($id);
 
-		return View::make('posts.show', compact('post'));
+// 		return View::make('posts.show', compact('post'));
